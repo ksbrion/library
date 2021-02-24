@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Library</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="divForm">
+            <form id="addBook">
+                <p class="close">&times;</p>
+                <label for="title" class="formLabel">Book Title:</label>
+                <input type="text" id="title" name="title" placeholder="Title" required><br>
+                <label for="author">Author:</label>
+                <input type="text" id="author" name="author" placeholder="Author" required><br>
+                <label for="pages">Number of pages:</label>
+                <input type="number" id="pages" name="pages" placeholder="No. of Pages" required><br>
+                <label for="pages">Have you read this?</label>
+                <label for="readToggle" class="switch">
+                    <input type="checkbox" id="readToggle">
+                    <span class="slider round"></span>
+                </label>
+                <button type="submit" id="submit" class="submit" onclick="addBookToLibrary()">Submit</button>
+            </form>
+        </div>
+        <div id="container"></div>
+        <button type="button" id="addButton" onclick="addBookToLibrary()">Add</button>
+        <script src="script.js"></script>
+    </body>
+</html>
